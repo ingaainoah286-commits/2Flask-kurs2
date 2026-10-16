@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velkommen til min første Flask-side</title>
+
+</head>
+<body>
+
+    <h1>Hallooo {{navn}}</h1>
+    <p>Denne siden skal komme fra en Flask-template</p>
+    <p>{{navn2}} er {{alder}} og skal starte på {{skole}} i {{klasse}}. <b></b>Hennes favorittspråk er {{favorittspråk}}</p>
+    
+
+
+    {% if alder >= 18%}
+    <p>Du er myndig.</p>
+    {%else %}
+    <p>Du er under 18 år.</p>
+    {% endif %}
+
+    <!--Oppgave6-->
+    {% if poeng >= 50%}
+    <p>Du vinner premier.</p>
+    {%else %}
+    <p>Du har ikke nok poenger.</p>
+    {% endif %}
+
+</body>
+</html>
